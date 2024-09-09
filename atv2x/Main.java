@@ -7,6 +7,11 @@ public class Main {
         System.out.println("Valor total do produto: " + produto1.getValorTotal());
         System.out.println("Quantidade total do produto: " + produto1.getQuantidadeTotal());
         
+
+//
+
+Funcionario funcionario = new Funcionario("João", 1000.0, 100.0);
+        funcionario.imprimir(10.0);
         
     }
 }
