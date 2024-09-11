@@ -2,13 +2,13 @@ public class EstoqueDeProduto {
   private String nome;
   private int quantidade;
   private double valor;
-  private Boolean cadastrado;
+  private Boolean naoCadastrado;
 
   public EstoqueDeProduto() {
     this.nome = null;
     this.quantidade = 0;
     this.valor = 0.0;
-    this.cadastrado = false;
+    this.naoCadastrado = false;
   }
 
   public String getNome() {
@@ -30,14 +30,14 @@ public class EstoqueDeProduto {
 
   //
   public void cadastrar(String nome, int quantidade, double valor) {
-    if (this.cadastrado) {
+    if (this.naoCadastrado) {
       System.out.println("Já existe um produto cadastrado. Exclua o cadastro atual para cadastrar um novo.");
-    }
-    if (!this.cadastrado) {
+    } 
+    if(!this.naoCadastrado) { 
       this.nome = nome;
       this.quantidade = quantidade;
       this.valor = valor;
-      this.cadastrado = true;
+      this.naoCadastrado = true; 
     }
 
   }
@@ -46,7 +46,7 @@ public class EstoqueDeProduto {
     this.nome = null;
     this.quantidade = 0;
     this.valor = 0.0;
-    this.cadastrado = false;
+    this.naoCadastrado = false;
   }
 
   public void removerQuantidade(int quantidade) {
